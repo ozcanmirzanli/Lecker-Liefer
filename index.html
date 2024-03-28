@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LeckerLiefer</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="shortcut icon" href="logos/main-logo-small.png" type="image/x-icon">
+  </head>
+  <body onload="render()">
+    <div class="mobile-basket">
+      <button id="basket-btn" onclick="toggleCart(basket)">Warenkorb</button>
+    </div>
+
+    <nav class="navigation">
+    <div class="left-nav">
+      <img class="back-icon" src="logos/back.png" alt="back" />
+      <img class="main-logo" src="logos/main-logo.png" alt="main-logo" />
+      <img class="main-logo-small" src="logos/main-logo-small.png" alt="main-logo" />
+    </div>
+
+    <h3>Speisekarte</h3>
+
+      <div class="right-nav">
+        <img class="flag" src="logos/flag.png" alt="flag" />
+        <img class="menu" src="logos/menu.png" alt="menu" />
+      </div>
+    </nav>
+
+    <div class="container">
+    <div class="main-container">
+      <div class="restaurant-container">
+        <div class="restaurant-header">
+          <img
+            class="margherita"
+            src="images/pizza-margherita.jpg"
+            alt="pizza-margherita"
+          />
+          <div class="restaurant-info">
+            <div class="details">
+              <img
+                class="pizza-logo"
+                src="logos/pizza-logo.png"
+                alt="pizza-logo"
+              />
+              <div class="title">
+              <h1>Chesssy Pizza</h1>
+              <div class="info-logos">
+                <img src="logos/info.png" alt="info" />
+                <img src="logos/like.png" alt="like" />
+              </div>
+              </div>
+              <div class="ratings">
+                <img src="logos/star.png" alt="star" />
+                <p><b>4.8</b> (452)</p>
+            </div>
+            <div class="delivery-info">
+              <img src="logos/bag.png" alt="bag" />
+              <span
+                >Min. 10,00 €&emsp;&#9679;&emsp;<img
+                  src="logos/bike.png"
+                  alt="bike"
+                />1,59 €</span
+              >
+            </div>
+              </div>
+              <div id="category-navigation"></div>
+          </div>
+        </div>
+      </div>
+        <div id="menu-container"></div>
+      </div>
+      <div id="shopping-basket"></div>
+    </div>
+    </div>
+    <footer>
+      <div class="footer-container">
+      <span>Ein Restaurant empfehlen</span>
+      <span>Ein Restaurant anmelden</span>
+      <span>Jobs</span>
+      <span>AGB</span>
+      <span>Datenschutzerklärung</span>
+      <span>Impressum</span>
+      <span>Verwendung von Cookies</span>
+      <span>Bug Bounty</span>
+      <span>Ethik-Hotline</span>
+    </div>
+      <p>© 2024 LeckerLiefer</p>
+    </footer>
+  </div>
+    <script src="foods.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
